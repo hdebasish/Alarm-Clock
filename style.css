@@ -15,14 +15,14 @@ body {
   
 }
 
+/* Display */
+
 .parent-container{
 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
-
 
 .wrapper {
   background-color: #ffffff;
@@ -35,6 +35,26 @@ body {
   box-shadow: 0px 0px 10px gray;
 
 }
+
+
+/* Clock Image  */
+
+#clock-image{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+
+#clock-image img{
+  height: 15em;
+  width: 15em;
+}
+
+
+/* DIgital Clock Display */
+
+
 .clock-display {
   color:black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -53,6 +73,9 @@ body {
   color: #E55D87;
   font-size: 20px;
 }
+
+
+/* Input fields for hrs mins and seconds */
 
 
 .inputs {
@@ -82,6 +105,15 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+#meridiem{
+  font-size: 1em;
+  border-radius: 0.3em;
+  padding: 0.4em 0.2em;
+  box-shadow: inset 0em 0em 1em 0em lightgray;
+  border: none;
+}
+
+/* Set Alarm Button */
 
 #setAlarm {
     background-image: linear-gradient(to right, #E55D87 0%, #5FC3E4  51%, #E55D87  100%);
@@ -106,6 +138,24 @@ input[type=number] {
 }
 
 
+/* Alarm List Display */
+
+.activeAlarms{
+  display: none;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  max-width: 31.25em;
+  border-radius: 0.5em;
+  margin: 30px;
+  box-shadow: 0px 0px 10px gray;
+  
+  
+}
+
+
+/* Alarm list item display */
+
 .alarm {
   display: flex;
   justify-content: space-between;
@@ -116,10 +166,8 @@ input[type=number] {
 
 .alarm div{
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
 }
-
 
 .alarm input[type="checkbox"] {
   appearance: none;
@@ -148,6 +196,7 @@ input[type=number] {
   background-color: #377dff;
   left: 2em;
 }
+
 .deleteButton {
   background-color: transparent;
   font-size: 1.5em;
@@ -156,38 +205,35 @@ input[type=number] {
   cursor: pointer;
 }
 
-#meridiem{
-  font-size: 1em;
-  border-radius: 0.3em;
-  padding: 0.4em 0.2em;
-  box-shadow: inset 0em 0em 1em 0em lightgray;
-  border: none;
+
+
+@media only screen and (max-width: 600px) {
+  #clock-image img{
+    height: 10em;
+    width: 10em;
+  }
+
+  .clock-display {
+    font-size: 2rem;
+  }
+
+  #setAlarm {
+    margin: 30px 50px;
+  }
+
 }
 
-.activeAlarms{
-  display: none;
-  background-color: #ffffff;
-  width: 100%;
-  height: 100%;
-  max-width: 31.25em;
-  border-radius: 0.5em;
-  margin: 30px;
-  box-shadow: 0px 0px 10px gray;
-  
-  
-}
+@media only screen and (max-width: 400px) {
+  #clock-image img{
+    height: 7em;
+    width: 7em;
+  }
 
+  .clock-display {
+    font-size: 1.5rem;
+  }
 
-/* Clock Image  */
-
-#clock-image{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
-
-#clock-image img{
-  height: 15em;
-  width: 15em;
+  #setAlarm {
+    margin: 30px 20px;
+  }
 }
