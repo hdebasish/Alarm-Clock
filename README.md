@@ -19,7 +19,7 @@ Debasish Halder
 
 ## Features
 
-- 1️⃣2️⃣ hr Timing
+- 1️⃣2️⃣ hrs Timing
 - 🕣 Digital Clock
 - ✅ Set Multiple Alarm / ❎ Delete Alarm
 - 🔘 Toggle button to 🔵 Start and 🔴 Stop Alarm
@@ -29,12 +29,12 @@ Debasish Halder
 
 ## Important Functions used in JS
 
-- displayClock() * This is the most important function which is responsible for displaying the digital clock and checking whether the alarm is active or not *
-- showNotification() * This function displays the alert dialogue *
-- createAlarm() * This function creates the alarm list with the alarm object *
-- startAlarm() * This function enables a particular alarm when the toggle button is enabled *
-- stopAlarm() * This function terminates the execution of the current alarm when the toggle button is disabled *
-- deleteAlarm() * This function deletes the alarm object from the alarm list *
+- displayClock() - This is the most important function which is responsible for displaying the digital clock and checking whether the alarm is active or not
+- showNotification() - This function displays the alert dialogue
+- createAlarm() - This function creates the alarm list with the alarm object
+- startAlarm() - This function enables a particular alarm when the toggle button is enabled
+- stopAlarm() - This function terminates the execution of the current alarm when the toggle button is disabled
+- deleteAlarm() - This function deletes the alarm object from the alarm list
 
 ## Run Locally
 
