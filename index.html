@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alarm Clock</title>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:wght@500&display=swap"
+    rel="stylesheet" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="parent-container">
+    <div class="wrapper">
+      <div id="clock-image"><img src="clock.png" alt="No Image Found"></div>
+      <div class="clock-display"><span class="ticker">00</span>:<span class="ticker">00</span>:<span class="ticker">00</span id="ampm"><span>pm</span></div>
+      <div class="container">
+        <div class="inputs">
+          <input type="number" id="hourInput" placeholder="00" />
+          <input type="number" id="minuteInput" placeholder="00" />
+          <input type="number" id="secondsInput" placeholder="00" />
+          <select id="meridiem">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div>
+        <button id="setAlarm">Set Alarm</button>
+      </div>
+    </div>
+    <div class="activeAlarms">
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>
